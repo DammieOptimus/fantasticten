@@ -228,7 +228,7 @@
         }
 
         .total-item .value.earnings-total {
-            font-size: 3.5em; /* Make the earnings stand out! */
+            font-size: 2em; /* Make the earnings stand out! */
             color: #c0392b; /* Deep red for impact */
             text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
         }
@@ -470,7 +470,7 @@
 
     <footer>
         <!-- Dynamic content placeholders -->
-        <p>&copy; <span id="copy-year"></span> <span id="company-name">[Company Name]</span> (<span id="team-name">[Team Name]</span>). All Rights Reserved. Earnings potential is illustrative and depends on individual effort and network growth.</p>
+        <p>&copy; <span id="copy-year"></span> <span id="company-name">Top-Up and Get Reward</span> (<span id="team-name">[Team Name]</span> Team). All Rights Reserved. Earnings potential is illustrative and depends on individual effort and network growth.</p>
     </footer>
 
     <script>
@@ -483,12 +483,10 @@
             const params = new URLSearchParams(window.location.search);
 
             // Extract values, providing defaults if missing
-            const companyName = params.get('companyName') || '[Company Name]';
             const teamName = params.get('teamName') || '[Team Name]';
             const referralID = params.get('referralID'); // Get referral ID
 
             // Update the company and team name in the footer
-            document.getElementById('company-name').textContent = companyName;
             document.getElementById('team-name').textContent = teamName;
 
              // Update copyright year dynamically
