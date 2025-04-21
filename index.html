@@ -45,7 +45,7 @@
 
         header {
             text-align: center;
-            padding: 40px 20px;
+            padding: 0 20px 40px 20px;
             border-bottom: 2px solid var(--primary-color);
             margin-bottom: 40px;
         }
@@ -324,6 +324,22 @@
             font-weight: bold; /* Optional: make dynamic names bold */
         }
 
+        /* Logo Styling */
+        .logo-container {
+            text-align: center; /* Centers the image within the div */
+            padding-top: 20px;  /* Space above the logo */
+            margin-bottom: 25px;/* Space between logo and header */
+        }
+
+        #company-logo {
+            max-width: 220px;    /* Adjust max width as needed */
+            max-height: 70px;   /* Adjust max height as needed */
+            height: auto;       /* Maintain aspect ratio */
+            /* display: inline-block; is often implied for <img>, but explicit can help */
+            display: inline-block;
+        }
+        /* End Logo Styling */
+
 
         /* Responsive Design Adjustments */
         @media (max-width: 768px) {
@@ -362,6 +378,12 @@
 <body>
 
     <div class="container">
+        <!-- Logo Container -->
+        <div class="logo-container">
+            <img id="company-logo" src="https://www.topupandgetreward.com/images/logo.png" alt="Company Logo">
+        </div>
+        <!-- End Logo Container -->
+        
         <header>
             <h1><i class="fas fa-rocket"></i> Unlock Your Earning EXPLOSION!</h1>
             <p class="subtitle">Discover the Jaw-Dropping Potential of the</p>
