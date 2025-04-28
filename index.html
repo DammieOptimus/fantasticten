@@ -310,6 +310,35 @@
              box-shadow: none;
         }
 
+        /* Secondary CTA Button Styling (How to Pay) */
+        .secondary-cta-button {
+            display: inline-block; /* Align similarly to main button if needed */
+            margin-top: 20px; /* Add space below the main button */
+            background: #c4302b; /* YouTube Red */
+            /* Or use a more subtle color: background: #555; */
+            color: var(--secondary-color);
+            font-size: 1.1em;   /* Smaller font size */
+            font-weight: 600;
+            padding: 10px 25px; /* Smaller padding */
+            border-radius: 30px; /* Slightly less rounded or match main */
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .secondary-cta-button i {
+            margin-right: 8px; /* Space between icon and text */
+        }
+
+        .secondary-cta-button:hover {
+            background-color: #a31c17; /* Darker YouTube Red on hover */
+            /* Or if using grey: background-color: #777; */
+            transform: translateY(-2px); /* Slight lift effect */
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+        }
+        /* End Secondary CTA Button Styling */
 
         footer {
             text-align: center;
@@ -370,6 +399,11 @@
             .cta-button {
                 font-size: 1.2em;
                 padding: 15px 30px;
+            }
+
+            .secondary-cta-button {
+            font-size: 1em;
+            padding: 8px 20px;
             }
         }
 
@@ -485,6 +519,10 @@
             <!-- The href will be set dynamically by JavaScript -->
             <a id="cta-button" href="#" class="cta-button">
                 <i class="fas fa-fire"></i> Start Your Fantastic 10 Journey NOW!
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=4zTEeEyGrY4" target="_blank" class="secondary-cta-button">
+                <i class="fab fa-youtube"></i> Watch: How to Pay for Registration
             </a>
         </section>
 
